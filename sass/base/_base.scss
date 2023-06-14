@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+
+ body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $dark;
+    color: $white;
+    font-size: 16px;
+ }
+
+ a {
+    color: $white;
+
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+ }
+
+ .container {
+   margin: 0 auto;
+   padding: 0 15px;
+   width: 1140px;
+ }
+
+ .text-right {
+   text-align: right;
+ }
+
