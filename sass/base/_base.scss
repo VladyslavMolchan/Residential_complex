@@ -21,10 +21,29 @@
  .container {
    margin: 0 auto;
    padding: 0 15px;
-   width: 1140px;
+   max-width: 1140px;
+
+   &--sm {
+    width: 824px;
+   }
  }
 
  .text-right {
    text-align: right;
+ }
+
+ .visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+
+  position: absolute;
+
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+
+
+  white-space: nowrap;
  }
 
