@@ -135,6 +135,11 @@ a:hover {
   color: #D4C17F;
 }
 
+.link-bold {
+  color: #D4C17F;
+  font-weight: 700;
+}
+
 .header {
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../../img/header/header-bg.jpg");
   display: flex;
@@ -190,6 +195,7 @@ a:hover {
 
 .nav {
   font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .nav__list {
@@ -443,5 +449,53 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  align-items: center;
+}
+
+.footer {
+  padding: 72px 0 51px 0;
+  background-color: #2D343C;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  margin-top: -12px;
+}
+
+.footer__logo-title {
+  font-family: "Post No Bills Jaffna SemiBold", sans-serif;
+  font-size: 36px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer__logo-info {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer-nav__list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__social {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */

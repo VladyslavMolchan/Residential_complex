@@ -1,0 +1,50 @@
+.footer {
+    padding: 72px 0 51px 0;
+    background-color: $footer-bg;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer__logo {
+    margin-top: -12px;
+}
+
+.footer__logo-title {
+    font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+    font-size: 36px;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer__logo-info {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+}
+
+.footer__nav {
+
+}
+
+.footer__address {
+    display: grid;
+    gap: 20px;
+}
+
+.footer-nav__list {
+    display: grid;
+    gap: 15px;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+}
