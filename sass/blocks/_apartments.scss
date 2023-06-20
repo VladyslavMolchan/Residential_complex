@@ -1,19 +1,21 @@
 .apartments {
+    position: relative;
 
+    &::before {
+        content: "III";
+        right:calc(50% + 555px);
+        transform: translate(50%, 0%);
+        @include decorNumber;
+    }
 }
 
-.container {
-
-}
 
 .apartments__title {
     margin-bottom: 88px;
 }
 
-.title-2 {
-
-}
-
 .apartments__cards {
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
