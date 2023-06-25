@@ -6,6 +6,7 @@
     background-color: $dark;
     color: $white;
     font-size: 16px;
+    
  }
 
  a {
@@ -52,6 +53,11 @@
   font-weight: 700;
   font-size: 36px;
   color: $accent;
+
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
  }
 
  .link-bold {
