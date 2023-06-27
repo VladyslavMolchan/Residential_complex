@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/libs/youtubeLightbox/youtubeLightbox.css" />
   </head>
   <body>
     <header class="header">
@@ -68,7 +69,7 @@
       <section class="benefits">
         <h2 class="visually-hidden">Перевага ЖК</h2>
 
-        <div class="container container--sm">
+        <div class="container">
           <div class="benefits__row">
             <div class="benefits__item">
               <img
@@ -170,6 +171,7 @@
             <form action="" class="cta__form form">
               <input type="text" class="form__input" placeholder="Ваше ім'я" />
               <input
+                data-tel-input
                 type="text"
                 class="form__input"
                 placeholder="Ваш телефон"
@@ -192,6 +194,7 @@
 
           <a
             href="https://www.youtube.com/watch?v=4kfHtwCKx0o"
+            data-youtubeLightbox
             class="video__link"
           >
             <img
@@ -214,7 +217,10 @@
             <h2 class="title-2">Район на карті</h2>
           </div>
           <div class="section-map__map">
-            <div class="map" id="map"></div>
+            <div class="map" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.6630606155527!2d34.79078354375121!3d50.91874823040981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220fc73a461%3A0xdb74f6366b836c28!2z0KHRg9C80YssINCh0YPQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0MDAwMA!5e1!3m2!1sru!2sua!4v1687855707274!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          
           </div>
         </div>
       </section>
@@ -232,7 +238,7 @@
 
             <input type="text" class="form__input" placeholder="Ваше ім'я" />
 
-            <input type="text" class="form__input" placeholder="Ваш телефон" />
+            <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" />
 
             <button class="form__btn" type="submit">Подивитись район</button>
           </form>
@@ -316,6 +322,19 @@
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <div id="youtubelightbox" class="youtubelightbox">
+      <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/libs/phoneMask/mask.js"></script>
+    <script src="./js/libs/phoneMask/mask_list.js"></script>
+
+    <script src="./js/libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

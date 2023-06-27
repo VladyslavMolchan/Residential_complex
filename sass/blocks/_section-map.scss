@@ -27,11 +27,12 @@
     }
 }
 
-.section-map__map {
+iframe {
+ width: 100%;
+ height: 400px;
 
-}
 
-.map {
-    height: 358px;
-    background: #626262;
+    @media(max-width:500px) {
+        height: 200px;
+    }
 }

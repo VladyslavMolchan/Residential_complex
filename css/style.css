@@ -801,9 +801,14 @@ a:hover {
   }
 }
 
-.map {
-  height: 358px;
-  background: #626262;
+iframe {
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 500px) {
+  iframe {
+    height: 200px;
+  }
 }
 
 .feedback {
